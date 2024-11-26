@@ -1,0 +1,149 @@
+[
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "UpdateScene",
+    "RelativePath": "api/panorama/{sceneId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "sceneDto",
+        "Type": "fpt.DTOs.SceneDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "DeleteScene",
+    "RelativePath": "api/panorama/{sceneId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "DeleteHotspot",
+    "RelativePath": "api/panorama/{sceneId}/{hotspotId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "hotspotId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "getHotspotBySceneId",
+    "RelativePath": "api/panorama/{sceneId}/hotspot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "AddHotspot",
+    "RelativePath": "api/panorama/{sceneId}/hotspot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "hotspotDto",
+        "Type": "fpt.DTOs.HotspotDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "UpdateHotspot",
+    "RelativePath": "api/panorama/{sceneId}/hotspot/{hotspotId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "hotspotId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "hotspotDto",
+        "Type": "fpt.DTOs.HotspotDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "GetPanoramaData",
+    "RelativePath": "api/panorama/panoramas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fpt.Controllers.GetAllPanoramaController",
+    "Method": "AddScene",
+    "RelativePath": "api/panorama/scenes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sceneDto",
+        "Type": "fpt.DTOs.SceneDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
