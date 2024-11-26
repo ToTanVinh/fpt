@@ -1,9 +1,10 @@
-import PanoramaViewer from "./components/PanoramaViewer";
+// App.js
+import React from "react";
+import PanoramaViewer from "./components/PanoramaViewer.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>Panorama Viewer</h1>
       <PanoramaViewer />
     </div>
   );

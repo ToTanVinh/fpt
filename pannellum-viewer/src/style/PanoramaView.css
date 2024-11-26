@@ -1,0 +1,21 @@
+.scene-hotspot {
+  background-image: url("/public/img/arrow.png"); /* Icon cho scene */
+}
+
+.image-hotspot {
+  background-image: url("/public/img/img.png"); /* Icon cho image */
+}
+
+.info-hotspot {
+  background-image: url("/public/img/info-icon.jpg"); /* Icon cho info */
+}
+
+.custom-hotspot {
+  position: absolute;
+  width: 50px; /* Kích thước chung */
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}

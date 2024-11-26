@@ -1,0 +1,133 @@
+.hotspot-slider {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  width: 300px; /* Giới hạn chiều rộng */
+  font-family: "Arial", sans-serif; /* Phông chữ rõ ràng */
+}
+
+h3 {
+  text-align: center; /* Canh giữa tiêu đề */
+}
+
+.hotspot-slider select {
+  width: 100%; /* Chiều rộng đầy đủ */
+  padding: 10px; /* Tăng khoảng cách bên trong */
+  border: 1px solid #ddd; /* Đường viền mảnh */
+  border-radius: 8px; /* Bo góc mềm mại */
+  font-size: 14px; /* Tăng kích thước chữ */
+  margin-bottom: 15px; /* Khoảng cách với nút bên dưới */
+  transition: border-color 0.3s ease;
+}
+
+.dropdown-box:focus {
+  border-color: #007bff; /* Màu xanh khi focus */
+  outline: none;
+}
+
+button {
+  width: 100%; /* Chiều rộng nút bằng container */
+  background-color: #007bff; /* Màu nền xanh */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Xóa đường viền */
+  padding: 10px 15px; /* Tăng kích thước nút */
+  border-radius: 8px; /* Bo góc mềm mại */
+  font-size: 14px; /* Kích thước chữ */
+  margin-top: 10px; /* Khoảng cách giữa các nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Màu xanh đậm khi hover */
+  transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+}
+
+button:disabled {
+  background-color: #ccc; /* Màu xám khi bị vô hiệu */
+  cursor: not-allowed;
+}
+
+button:first-of-type {
+  margin-top: 0; /* Xóa khoảng cách trên cùng cho nút đầu tiên */
+}
+
+/* Kiểu cho modal */
+.hotspot-modal {
+  background: #ffffff;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 10px; /* Bo góc mềm mại */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ xung quanh modal */
+  position: relative;
+  z-index: 1001;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng cho modal */
+}
+
+/* Kiểu cho overlay */
+.hotspot-overlay {
+  background: rgba(0, 0, 0, 0.6); /* Đổi màu nền mờ cho overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Hiệu ứng khi modal mở (Zoom in) */
+.hotspot-overlay {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Kiểu cho form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Kiểu cho label của form */
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Kiểu cho input */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Bo góc cho input */
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+/* Thay đổi màu đường viền của input khi focus */
+.form-group input:focus {
+  border-color: #007bff; /* Màu xanh khi focus */
+  outline: none;
+}
